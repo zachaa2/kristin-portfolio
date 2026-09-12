@@ -8,13 +8,20 @@ function About() {
         <ImagePlaceholder label="About Photo" className="h-80" />
         <div className="space-y-4 text-neutral-700">
           <p>
-            Placeholder bio text. Kristin is a mechanical engineer with
-            experience in design, prototyping, and manufacturing.
+            Hello! My name is Kristin Zachariah, and I am a fourth year
+            Mechanical Engineering and Design major at Northeastern
+            University. I have always loved working with my hands and
+            creating things. I believe my combined major has given me the
+            opportunity to experience the best of both worlds, fueling my
+            passion for creative thinking and ideation as well as 2D/3D
+            modeling and component manufacturing.
           </p>
           <p>
-            Add education, skills, and career highlights here once content is
-            ready.
+            My enthusiasm for exploring the intersection of engineering and
+            design has helped me become a fast learner, continuously
+            improving my skill set for any task I might face.
           </p>
+          <p className="text-sm font-medium text-accent-600">Boston, MA</p>
         </div>
       </div>
     </div>

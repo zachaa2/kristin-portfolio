@@ -17,13 +17,13 @@ function Contact() {
           hello@example.com
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://linkedin.com/in/kristin-zachariah"
           target="_blank"
           rel="noreferrer"
           className="inline-flex w-fit items-center gap-2 text-neutral-700 hover:text-accent-600"
         >
           <LinkIcon size={20} />
-          LinkedIn
+          linkedin.com/in/kristin-zachariah
         </a>
       </div>
     </div>

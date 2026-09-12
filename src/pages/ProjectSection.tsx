@@ -27,7 +27,9 @@ function ProjectSection() {
         className="mt-6 h-64 w-full"
       />
 
-      <p className="mt-6 text-neutral-700">{section.content}</p>
+      <p className="mt-6 whitespace-pre-line text-neutral-700">
+        {section.content}
+      </p>
 
       <div className="mt-10 flex items-center justify-between border-t border-accent-100 pt-6">
         {prev ? (

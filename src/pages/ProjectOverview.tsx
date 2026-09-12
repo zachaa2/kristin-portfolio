@@ -17,7 +17,9 @@ function ProjectOverview() {
 
       <ImagePlaceholder label="Project Hero Image" className="mt-6 h-72 w-full" />
 
-      <p className="mt-6 text-neutral-700">{project.summary}</p>
+      <p className="mt-6 whitespace-pre-line text-neutral-700">
+        {project.summary}
+      </p>
 
       <div className="mt-4 flex flex-wrap gap-2">
         {project.tools.map((tool) => (
@@ -30,23 +32,29 @@ function ProjectOverview() {
         ))}
       </div>
 
-      <h2 className="mt-10 text-xl font-semibold text-neutral-900">
-        Explore this project
-      </h2>
-      <div className="mt-4 grid gap-4 sm:grid-cols-2">
-        {project.sections.map((section) => (
-          <Link
-            key={section.slug}
-            to={`/projects/${project.slug}/${section.slug}`}
-            className="group rounded-xl border border-accent-100 bg-white p-5 shadow-sm transition-shadow hover:shadow-md"
-          >
-            <h3 className="font-semibold text-neutral-900 group-hover:text-accent-600">
-              {section.title}
-            </h3>
-            <p className="mt-1 text-sm text-neutral-600">{section.summary}</p>
-          </Link>
-        ))}
-      </div>
+      {project.sections.length > 0 && (
+        <>
+          <h2 className="mt-10 text-xl font-semibold text-neutral-900">
+            Explore this project
+          </h2>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {project.sections.map((section) => (
+              <Link
+                key={section.slug}
+                to={`/projects/${project.slug}/${section.slug}`}
+                className="group rounded-xl border border-accent-100 bg-white p-5 shadow-sm transition-shadow hover:shadow-md"
+              >
+                <h3 className="font-semibold text-neutral-900 group-hover:text-accent-600">
+                  {section.title}
+                </h3>
+                <p className="mt-1 text-sm text-neutral-600">
+                  {section.summary}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   )
 }
