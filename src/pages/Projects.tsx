@@ -1,10 +1,6 @@
+import { Link } from 'react-router-dom'
 import ImagePlaceholder from '../components/ImagePlaceholder'
-
-const projects = [
-  { id: 1, title: 'Project One', description: 'A brief description of the project goes here.' },
-  { id: 2, title: 'Project Two', description: 'A brief description of the project goes here.' },
-  { id: 3, title: 'Project Three', description: 'A brief description of the project goes here.' },
-]
+import { projects } from '../data/projects'
 
 function Projects() {
   return (
@@ -16,20 +12,24 @@ function Projects() {
 
       <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
-          <div
-            key={project.id}
-            className="overflow-hidden rounded-xl border border-accent-100 bg-white shadow-sm"
+          <Link
+            key={project.slug}
+            to={`/projects/${project.slug}`}
+            className="group overflow-hidden rounded-xl border border-accent-100 bg-white shadow-sm transition-shadow hover:shadow-md"
           >
-            <ImagePlaceholder label="Project Image" className="h-40 w-full rounded-none" />
+            <ImagePlaceholder
+              label="Project Image"
+              className="h-40 w-full rounded-none"
+            />
             <div className="p-5">
-              <h2 className="text-lg font-semibold text-neutral-900">
+              <h2 className="text-lg font-semibold text-neutral-900 group-hover:text-accent-600">
                 {project.title}
               </h2>
               <p className="mt-2 text-sm text-neutral-600">
-                {project.description}
+                {project.tagline}
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

@@ -26,9 +26,26 @@ background/about, and contact info. Deployed as a free static site on Vercel.
 ## Structure
 
 - `src/pages/` — route-level pages (Home, Projects, About, Contact)
+- `src/pages/ProjectLayout.tsx` — per-project layout: breadcrumb + persistent
+  section nav, wraps nested project routes
+- `src/pages/ProjectOverview.tsx` — project "home" (index route at
+  `/projects/:projectId`): summary + cards linking into sections
+- `src/pages/ProjectSection.tsx` — detail view for one section
+  (`/projects/:projectId/:sectionId`), with prev/next section navigation
+- `src/data/projects.ts` — project + section content (data-driven; add a
+  project or section here without touching routing/layout code)
 - `src/components/` — shared UI (Navbar, Footer, Layout, ImagePlaceholder)
 - `src/App.tsx` — route definitions
 - `src/main.tsx` — app entry, wraps `App` in `BrowserRouter`
+
+## Project detail navigation
+
+Projects use a nested-route structure instead of dead-end detail pages:
+`/projects` (grid) → `/projects/:projectId` (overview) →
+`/projects/:projectId/:sectionId` (section detail). The section nav and
+breadcrumb persist across the project overview and all of its section pages,
+so viewers can jump between sections directly instead of bouncing back to the
+project home each time.
 
 ## Images
 
