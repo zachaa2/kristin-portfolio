@@ -65,15 +65,37 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: 'type-specimen',
-    title: 'Type Specimen',
-    tagline: 'A typeface study of "Le Monde Journal" for a Typography studio course.',
+    slug: 'design-coursework',
+    title: 'Design Coursework',
+    tagline: 'Studio and studies exploring typography, composition, and UX.',
     summary:
-      'Type Specimen is a typeface study created in InDesign as part of my Fall 2024 Typography studio course. My study focuses on the "Le Monde Journal" typeface from Typofonderie, a French type foundry. The result of this study consists of three 5x7" postcards.',
+      'A collection of design-focused coursework spanning typography, non-objective composition, and app UX — exploring the creative side of my Design major alongside my mechanical engineering work.',
     role: 'Design Student',
-    timeframe: 'Fall 2024',
-    tools: ['InDesign'],
-    sections: [],
+    timeframe: 'Fall 2023 – Fall 2024',
+    tools: ['InDesign', 'Adobe XD', 'Painting'],
+    sections: [
+      {
+        slug: 'type-specimen',
+        title: 'Type Specimen',
+        summary: 'A typeface study of "Le Monde Journal" for a Typography studio course.',
+        content:
+          'Type Specimen is a typeface study created in InDesign as part of my Fall 2024 Typography studio course. My study focuses on the "Le Monde Journal" typeface from Typofonderie, a French type foundry. The result of this study consists of three 5x7" postcards.',
+      },
+      {
+        slug: 'non-objective-design',
+        title: 'Non-objective Design',
+        summary: 'Value studies exploring non-objective design.',
+        content:
+          'These pieces were part of a series studying different values and non-objective design from my Color and Composition class in Spring 2024. I sketched my own geometric design and recreated it using a custom black-white-gray value scale I sketched and printed, incorporating tones of black and white paint, solid color shades, and pointillism.',
+      },
+      {
+        slug: 'transport-demo',
+        title: 'TransporT Demo',
+        summary: 'An app concept addressing unreliable Boston public bus timing.',
+        content:
+          "For my Design Processes and Practices class in Fall 2023, we were given the prompt to develop a demo for an app to address an issue of our choice. I chose to address the issue of unreliable timing of the public buses in Boston. The demo route is a real-life path I would take to volunteering weekly.\n\nMy app, TransporT, includes live bus tracking and real-time updates, along with a social component where users can share comments and updates about the status of a bus or station. This demo was created using Adobe XD and includes basic functionality such as limited search options and bus routes.",
+      },
+    ],
   },
   {
     slug: 'computer-case',
@@ -87,17 +109,6 @@ export const projects: Project[] = [
     sections: [],
   },
   {
-    slug: 'non-objective-design',
-    title: 'Non-objective Design',
-    tagline: 'Value studies exploring non-objective design.',
-    summary:
-      'These pieces were part of a series studying different values and non-objective design from my Color and Composition class in Spring 2024. I sketched my own geometric design and recreated it using a custom black-white-gray value scale I sketched and printed, incorporating tones of black and white paint, solid color shades, and pointillism.',
-    role: 'Design Student — Color and Composition',
-    timeframe: 'Spring 2024',
-    tools: ['Painting', 'Pointillism'],
-    sections: [],
-  },
-  {
     slug: 'crystal-structure-study',
     title: 'Crystal Structure Study',
     tagline: 'Modeling crystal structures and atomic parameters in SolidWorks.',
@@ -106,17 +117,6 @@ export const projects: Project[] = [
     role: 'Student — Intro to Material Science',
     timeframe: 'Spring 2024',
     tools: ['SolidWorks'],
-    sections: [],
-  },
-  {
-    slug: 'transport-demo',
-    title: 'TransporT Demo',
-    tagline: 'An app concept addressing unreliable Boston public bus timing.',
-    summary:
-      "For my Design Processes and Practices class in Fall 2023, we were given the prompt to develop a demo for an app to address an issue of our choice. I chose to address the issue of unreliable timing of the public buses in Boston. The demo route is a real-life path I would take to volunteering weekly.\n\nMy app, TransporT, includes live bus tracking and real-time updates, along with a social component where users can share comments and updates about the status of a bus or station. This demo was created using Adobe XD and includes basic functionality such as limited search options and bus routes.",
-    role: 'Student — Design Processes and Practices',
-    timeframe: 'Fall 2023',
-    tools: ['Adobe XD', 'UX Design'],
     sections: [],
   },
   {
