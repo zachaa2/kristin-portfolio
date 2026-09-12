@@ -10,11 +10,11 @@ function Contact() {
 
       <div className="mt-8 flex flex-col gap-4">
         <a
-          href="mailto:hello@example.com"
+          href="mailto:kristin.zachariah@gmail.com"
           className="inline-flex w-fit items-center gap-2 text-neutral-700 hover:text-accent-600"
         >
           <Mail size={20} />
-          hello@example.com
+          kristin.zachariah@gmail.com
         </a>
         <a
           href="https://linkedin.com/in/kristin-zachariah"
