@@ -1,6 +1,7 @@
 import { Link, useOutletContext, useParams } from 'react-router-dom'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import ImagePlaceholder from '../components/ImagePlaceholder'
+import ImageGallery from '../components/ImageGallery'
 import type { Project } from '../data/projects'
 
 function ProjectSection() {
@@ -22,10 +23,14 @@ function ProjectSection() {
       <h1 className="text-2xl font-bold text-neutral-900">{section.title}</h1>
       <p className="mt-2 text-neutral-600">{section.summary}</p>
 
-      <ImagePlaceholder
-        label={`${section.title} Image`}
-        className="mt-6 h-64 w-full"
-      />
+      {section.images && section.images.length > 0 ? (
+        <ImageGallery images={section.images} className="mt-6" />
+      ) : (
+        <ImagePlaceholder
+          label={`${section.title} Image`}
+          className="mt-6 h-64 w-full"
+        />
+      )}
 
       <p className="mt-6 whitespace-pre-line text-neutral-700">
         {section.content}

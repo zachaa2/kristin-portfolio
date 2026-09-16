@@ -1,9 +1,20 @@
+export interface SectionImage {
+  src: string
+  caption?: string
+}
+
 export interface ProjectSection {
   slug: string
   title: string
   summary: string
   content: string
+  images?: SectionImage[]
 }
+
+import originalPusherFaceDesign from '../assets/pie-pusher/original-pusher-face-design.png'
+import firstIterationNewPusher from '../assets/pie-pusher/first-iteration-new-pusher.png'
+import firstPrototype from '../assets/pie-pusher/first-prototype.png'
+import finalPusherFaceDesigns from '../assets/pie-pusher/final-pusher-face-designs.png'
 
 export interface Project {
   slug: string
@@ -31,8 +42,14 @@ export const projects: Project[] = [
         slug: 'pie-pusher-face',
         title: 'Pie Pusher Face',
         summary: 'Redesigning a machine part to fix pies sliding during packaging.',
+        images: [
+          { src: originalPusherFaceDesign, caption: 'Original Pusher Face Design' },
+          { src: firstIterationNewPusher, caption: 'First Iteration of New Pie Pusher' },
+          { src: firstPrototype, caption: 'First Pie Pusher Prototype' },
+          { src: finalPusherFaceDesigns, caption: 'Final Pusher Face Designs' },
+        ],
         content:
-          "This is a smaller assignment I had that was really fun because it involved a lot of customization, prototyping, and communication with the floor technicians. I unfortunately do not have any actual photos of the printed parts due to the timeline of the assignment.\n\nThis project came to me quite last minute. It was a project that had belonged to another engineer but in these final testing stages it became a group effort. The original pusher face design was causing the pies to slide up and not be loaded correctly into its box.\n\nSince the machine was already in the testing phase, the workshop technicians had an idea of what they wanted the new pusher design to be. To have it 3D printed for prototyping, a digital 3D model was needed. That's where I came in!\n\nBased on the details described by the technicians, I took some measurements of the pie and created the first new prototype for the pie-pusher face. It was then 3D printed and installed on the machine to continue testing. During this testing, the technician noticed that due to natural inconsistencies with the pies (from food manufacturing) some of the pies would still lift by a very small amount. Which, while not visibly an issue, sometimes prevented the pies from fitting in the package. So, we came up with a solution to include a cover on top of the pusher face, dimensioning it so that the pusher face itself would not interfere with the pie entering the package either.\n\nAfter I added this additional feature to the design, the new design was 3D printed, underwent further testing, and was approved. The client actually had two different pie sizes. After the first design was successful, I modeled a second pusher face for a larger pie size, which included a cutout at the back of the profile since the pie was so large — it needed more space to fit comfortably in the pusher. The pusher could not just be made larger due to other dimensional restrictions of the rest of the machine and the package size.",
+          "This is a smaller assignment I had that was really fun because it involved a lot of customization, prototyping, and communication with the floor technicians.\n\nThis project came to me quite last minute. It was a project that had belonged to another engineer but in these final testing stages it became a group effort. The original pusher face design was causing the pies to slide up and not be loaded correctly into its box.\n\nSince the machine was already in the testing phase, the workshop technicians had an idea of what they wanted the new pusher design to be. To have it 3D printed for prototyping, a digital 3D model was needed. That's where I came in!\n\nBased on the details described by the technicians, I took some measurements of the pie and created the first new prototype for the pie-pusher face. It was then 3D printed and installed on the machine to continue testing. During this testing, the technician noticed that due to natural inconsistencies with the pies (from food manufacturing) some of the pies would still lift by a very small amount. Which, while not visibly an issue, sometimes prevented the pies from fitting in the package. So, we came up with a solution to include a cover on top of the pusher face, dimensioning it so that the pusher face itself would not interfere with the pie entering the package either.\n\nAfter I added this additional feature to the design, the new design was 3D printed, underwent further testing, and was approved. The client actually had two different pie sizes. After the first design was successful, I modeled a second pusher face for a larger pie size, which included a cutout at the back of the profile since the pie was so large — it needed more space to fit comfortably in the pusher. The pusher could not just be made larger due to other dimensional restrictions of the rest of the machine and the package size.",
       },
       {
         slug: 'argoseal-pusher-faces',
