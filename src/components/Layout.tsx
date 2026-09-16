@@ -3,15 +3,15 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 
 function Layout() {
-  return (
-    <div className="flex min-h-svh flex-col">
-      <Navbar />
-      <main className="flex-1">
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
-  )
+    return (
+        <div className="flex min-h-svh flex-col">
+            <Navbar />
+            <main className="flex-1">
+                <Outlet />
+            </main>
+            <Footer />
+        </div>
+    )
 }
 
 export default Layout
