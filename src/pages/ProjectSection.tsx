@@ -26,7 +26,11 @@ function ProjectSection() {
             <p className="mt-2 text-neutral-600">{section.summary}</p>
 
             {section.images && section.images.length > 0 ? (
-                <ImageGallery images={section.images} className="mt-6" />
+                <ImageGallery
+                    images={section.images}
+                    variant={section.galleryVariant}
+                    className="mt-6"
+                />
             ) : (
                 <ImagePlaceholder
                     label={`${section.title} Image`}

@@ -9,6 +9,8 @@ export interface ProjectSection {
     summary: string
     content: string
     images?: SectionImage[]
+    /** Gallery display mode; defaults to 'grid' when omitted. */
+    galleryVariant?: 'grid' | 'carousel'
 }
 
 import originalPusherFaceDesign from '../assets/pie-pusher/original-pusher-face-design.png'
@@ -32,6 +34,16 @@ import prototype from '../assets/hands-on/1.jpg'
 import hands from '../assets/hands-on/2.jpg'
 import sensorSpacing from '../assets/hands-on/3.jpg'
 import sensorTopView from '../assets/hands-on/4.jpg'
+
+import clamartFrontDesign from '../assets/type-speciman/1-postcard-clamart-front-design.jpg'
+import clamartPrintPhoto from '../assets/type-speciman/2-postcard-clamart-print-photo.jpg'
+import typeAnatomyDesign from '../assets/type-speciman/3-postcard-type-anatomy-design.jpg'
+import typeAnatomyPrintPhoto from '../assets/type-speciman/4-postcard-type-anatomy-print-photo.jpg'
+import leMondeJournalHistoryDesign from '../assets/type-speciman/5-postcard-le-monde-journal-history-design.jpg'
+import typefaceComparisonDesign from '../assets/type-speciman/6-postcard-typeface-comparison-design.jpg'
+import typefaceSpecimenDesign from '../assets/type-speciman/7-postcard-typeface-specimen-design.jpg'
+import postcardsFlatLayPhoto from '../assets/type-speciman/8-postcards-flat-lay-photo.jpg'
+import handsomeCaseStudyDesign from '../assets/type-speciman/9-postcard-handsome-case-study-design.jpg'
 
 export interface Project {
     slug: string
@@ -188,6 +200,46 @@ export const projects: Project[] = [
                     'A typeface study of "Le Monde Journal" for a Typography studio course.',
                 content:
                     'Type Specimen is a typeface study created in InDesign as part of my Fall 2024 Typography studio course. My study focuses on the "Le Monde Journal" typeface from Typofonderie, a French type foundry. The result of this study consists of three 5x7" postcards.',
+                galleryVariant: 'carousel',
+                images: [
+                    {
+                        src: clamartFrontDesign,
+                        caption: 'Postcard 1: "Clamart" type anatomy design',
+                    },
+                    {
+                        src: clamartPrintPhoto,
+                        caption: 'Postcard 1: printed postcard in hand',
+                    },
+                    {
+                        src: typeAnatomyDesign,
+                        caption: 'Postcard 2: Type Anatomy breakdown design',
+                    },
+                    {
+                        src: typeAnatomyPrintPhoto,
+                        caption: 'Postcard 2: printed postcard photo',
+                    },
+                    {
+                        src: leMondeJournalHistoryDesign,
+                        caption: 'Postcard 3: Le Monde Journal history',
+                    },
+                    {
+                        src: typefaceComparisonDesign,
+                        caption: 'Typeface comparison against Times New Roman',
+                    },
+                    {
+                        src: typefaceSpecimenDesign,
+                        caption: 'Weight and style specimen sheet',
+                    },
+                    {
+                        src: postcardsFlatLayPhoto,
+                        caption: 'All three postcards laid out together',
+                    },
+                    {
+                        src: handsomeCaseStudyDesign,
+                        caption:
+                            'Handsome agency case study, a commercial use of Le Monde Journal',
+                    },
+                ],
             },
             {
                 slug: 'non-objective-design',
