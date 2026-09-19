@@ -16,6 +16,18 @@ import firstIterationNewPusher from '../assets/pie-pusher/first-iteration-new-pu
 import firstPrototype from '../assets/pie-pusher/first-prototype.png'
 import finalPusherFaceDesigns from '../assets/pie-pusher/final-pusher-face-designs.png'
 
+import initialPrint from '../assets/argoseal/1.jpg'
+import spacingTest from '../assets/argoseal/2.jpg'
+import finalPrototype from '../assets/argoseal/3.jpg'
+import manufacturedPart from '../assets/argoseal/4.jpg'
+import installation from '../assets/argoseal/5.jpg'
+
+import firstPrint from '../assets/printing/1.jpg'
+import bear from '../assets/printing/2.jpg'
+import infillPattern from '../assets/printing/3.jpg'
+import supportStructures1 from '../assets/printing/4.jpg'
+import supportStructures2 from '../assets/printing/5.jpg'
+
 export interface Project {
     slug: string
     title: string
@@ -67,19 +79,33 @@ export const projects: Project[] = [
             },
             {
                 slug: 'argoseal-pusher-faces',
-                title: 'Argo Carton Sealer: Pusher Faces',
+                title: 'Argo Carton Sealer',
                 summary:
-                    'A change-parts order that uncovered an undocumented alignment issue.',
+                    'A change-parts order that uncovered an undocumented alignment issue, leading into a rail redesign for consistent glue placement.',
+                images: [
+                    {
+                        src: initialPrint,
+                        caption: 'Initial 3D printed prototype',
+                    },
+                    {
+                        src: spacingTest,
+                        caption: 'Dowel pin hole spacing test prints',
+                    },
+                    {
+                        src: finalPrototype,
+                        caption: 'Final pusher face prototypes',
+                    },
+                    {
+                        src: manufacturedPart,
+                        caption: 'Manufactured Part',
+                    },
+                    {
+                        src: installation,
+                        caption: 'Pusher face installed in the machine',
+                    },
+                ],
                 content:
-                    'One of my first bigger projects at Econocorp actually started out as a simple change parts order.\n\nThe initial request from the client was for new pusher faces to install in their machine, that matched the profiles for the boxes of their products. The pusher face, as described by its name, is the feature on the machine that fits around the side of a box and guides (pushes) it through the machine to be glued and closed.\n\nWe received 4 different box types, but from the box dimensions, I decided only 3 pusher faces were needed as 2 of the boxes had the same height and width of opening. The three original prototypes were developed from a previously existing model. When I went to install the prototypes for testing, I realized that the dowel pin hole (middle hole) was misaligned with the hole on the machine.\n\nThrough further investigation, I realized that this was an issue that had been identified in a previous order, but the modifications were only made on the part itself with no drawing documentation to track it. I went ahead and did some quick models of different spacing for the dowel pin hole — the two options were a 1/32" shift and a 1/16" shift. Once a decision was made, I was able to document the necessary change in all my drawings.\n\nOnce that issue was sorted, the pusher face drawings were sent to the shop, and I received finalized parts for installation and use on the machine.',
-            },
-            {
-                slug: 'argoseal-rail-redesign',
-                title: 'Argo Carton Sealer: Rail Redesign',
-                summary:
-                    'A follow-on rail redesign to fix glue alignment across all box sizes.',
-                content:
-                    'After completing the initial job request, I began final testing to make sure that as the boxes were being pushed through the Argoseal, the glue release alignment was correct. This testing made me aware of an issue with the dimensions of another feature on the machine. The rails on the machine that were meant to hold up the outer major flaps during glue application were too tall for one of the boxes. This meant that while the box was being pushed through the machine, the outer major flaps would either be crushed by the rails, or go under them and have glue applied on the outside.\n\nThe rails were an inventory part that would not need to be adjusted for new jobs. The original rail design had two rail options on either side, a taller set for bigger boxes and a shorter set for small boxes. However, one of the boxes provided by the client was too small even for the shorter option.\n\nI came up with a new rail design, with only one height option that was able to accommodate all the box sizes we needed it to. I modeled the new rails in SolidWorks, 3D printed them, and then installed the prints in the machine for testing. My new design maintained the symmetry of the original one, so one design could be used for both left and right rails, but also cut down on material usage since only one rail was needed.\n\nOnce the rails were tested with all the different box sizes they were sent to the shop for manufacturing. I installed the final parts and did some final adjustments for the glue sensors — the change in rail height meant the glue sensor position had to be readjusted to properly detect the box flap and release glue with the proper timing and position.',
+                    'One of my first bigger projects at Econocorp actually started out as a simple change parts order.\n\nThe initial request from the client was for new pusher faces to install in their machine, that matched the profiles for the boxes of their products. The pusher face, as described by its name, is the feature on the machine that fits around the side of a box and guides (pushes) it through the machine to be glued and closed.\n\nWe received 4 different box types, but from the box dimensions, I decided only 3 pusher faces were needed as 2 of the boxes had the same height and width of opening. The three original prototypes were developed from a previously existing model. When I went to install the prototypes for testing, I realized that the dowel pin hole (middle hole) was misaligned with the hole on the machine.\n\nThrough further investigation, I realized that this was an issue that had been identified in a previous order, but the modifications were only made on the part itself with no drawing documentation to track it. I went ahead and did some quick models of different spacing for the dowel pin hole — the two options were a 1/32" shift and a 1/16" shift. Once a decision was made, I was able to document the necessary change in all my drawings.\n\nOnce that issue was sorted, the pusher face drawings were sent to the shop, and I received finalized parts for installation and use on the machine.\n\nAfter completing the initial job request, I began final testing to make sure that as the boxes were being pushed through the Argoseal, the glue release alignment was correct. This testing made me aware of an issue with the dimensions of another feature on the machine. The rails on the machine that were meant to hold up the outer major flaps during glue application were too tall for one of the boxes. This meant that while the box was being pushed through the machine, the outer major flaps would either be crushed by the rails, or go under them and have glue applied on the outside.\n\nThe rails were an inventory part that would not need to be adjusted for new jobs. The original rail design had two rail options on either side, a taller set for bigger boxes and a shorter set for small boxes. However, one of the boxes provided by the client was too small even for the shorter option.\n\nI came up with a new rail design, with only one height option that was able to accommodate all the box sizes we needed it to. I modeled the new rails in SolidWorks, 3D printed them, and then installed the prints in the machine for testing. My new design maintained the symmetry of the original one, so one design could be used for both left and right rails, but also cut down on material usage since only one rail was needed.\n\nOnce the rails were tested with all the different box sizes they were sent to the shop for manufacturing. I installed the final parts and did some final adjustments for the glue sensors — the change in rail height meant the glue sensor position had to be readjusted to properly detect the box flap and release glue with the proper timing and position.',
             },
             {
                 slug: 'hands-on-assembly',
@@ -96,6 +122,28 @@ export const projects: Project[] = [
                     'A what-to-know guide for the team\u2019s first 3D printer.',
                 content:
                     "At around the time I joined Econocorp Inc., they were just about starting up their use of their first 3D printer — a Creality K1. They were looking to get all the engineers more familiar with 3D printing their own prototypes to optimize machine design. I was given the chance to explore the printer's settings and materials and come up with a quick what-to-know guide for my fellow employees.\n\nOne fun thing about this assignment was that I had actually never 3D printed before, so this was both a teaching and a learning experience for me. I printed several samples to go along with the guide, showcasing common infill patterns and support structures that one might be interested in using for a print.\n\nI felt it was necessary to include physical prints in this assignment because I believe giving the user a physical representation of their desired outcome is more effective than reading about it and looking at photos. For example, if you wanted to decide on what kind of support structure to use in your print, having already-printed examples of each gives you a sense of how easy it might be to remove the support structure afterward.",
+                images: [
+                    {
+                        src: firstPrint,
+                        caption: 'First Print',
+                    },
+                    {
+                        src: bear,
+                        caption: 'Bear!',
+                    },
+                    {
+                        src: infillPattern,
+                        caption: 'Infill Patterns',
+                    },
+                    {
+                        src: supportStructures1,
+                        caption: 'Support Structures',
+                    },
+                    {
+                        src: supportStructures2,
+                        caption: 'Support Structures',
+                    },
+                ],
             },
         ],
     },

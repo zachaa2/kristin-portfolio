@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import ImagePlaceholder from '../components/ImagePlaceholder'
+import mainPhoto from '../assets/main_photo.jpg'
 
 function Home() {
     return (
@@ -28,9 +28,10 @@ function Home() {
                         <ArrowRight size={18} />
                     </Link>
                 </div>
-                <ImagePlaceholder
-                    label="Portrait / Hero Image"
-                    className="h-80"
+                <img
+                    src={mainPhoto}
+                    alt="Portrait of Kristin Zachariah"
+                    className="h-80 w-full rounded-xl object-cover"
                 />
             </section>
         </div>
