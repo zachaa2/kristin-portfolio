@@ -1,5 +1,6 @@
 import { Link, useOutletContext } from 'react-router-dom'
 import ImagePlaceholder from '../components/ImagePlaceholder'
+import ImageGallery from '../components/ImageGallery'
 import type { Project } from '../data/projects'
 
 function ProjectOverview() {
@@ -15,10 +16,18 @@ function ProjectOverview() {
             </h1>
             <p className="mt-3 text-lg text-neutral-600">{project.tagline}</p>
 
-            <ImagePlaceholder
-                label="Project Hero Image"
-                className="mt-6 h-72 w-full"
-            />
+            {project.images && project.images.length > 0 ? (
+                <ImageGallery
+                    images={project.images}
+                    variant={project.galleryVariant}
+                    className="mt-6"
+                />
+            ) : (
+                <ImagePlaceholder
+                    label="Project Hero Image"
+                    className="mt-6 h-72 w-full"
+                />
+            )}
 
             <p className="mt-6 whitespace-pre-line text-neutral-700">
                 {project.summary}

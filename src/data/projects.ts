@@ -57,6 +57,17 @@ import nonObjectivePiece4 from '../assets/non-objective-design/4.jpg'
 import transportDemo1 from '../assets/transport-demo/1.png'
 import transportDemo2 from '../assets/transport-demo/2.jpg'
 
+import computerCase1 from '../assets/computer-case/1.jpg'
+import computerCase2 from '../assets/computer-case/2.jpg'
+import computerCase3 from '../assets/computer-case/3.jpg'
+import computerCase4 from '../assets/computer-case/4.jpg'
+import computerCase5 from '../assets/computer-case/5.jpg'
+
+import crystalStructure1 from '../assets/crystal-structure-study/1.jpg'
+import crystalStructure2 from '../assets/crystal-structure-study/2.jpg'
+import crystalStructure3 from '../assets/crystal-structure-study/3.jpg'
+import crystalStructure4 from '../assets/crystal-structure-study/4.jpg'
+
 export interface Project {
     slug: string
     title: string
@@ -66,6 +77,10 @@ export interface Project {
     timeframe: string
     tools: string[]
     sections: ProjectSection[]
+    /** Hero images shown on the project overview page (used when there are no sections to browse into). */
+    images?: SectionImage[]
+    /** Gallery display mode for `images`; defaults to 'grid' when omitted. */
+    galleryVariant?: 'grid' | 'carousel'
 }
 
 export const projects: Project[] = [
@@ -294,6 +309,14 @@ export const projects: Project[] = [
         timeframe: 'First Year',
         tools: ['Laser Cutting', '3D Printing', 'Arduino'],
         sections: [],
+        galleryVariant: 'carousel',
+        images: [
+            { src: computerCase1 },
+            { src: computerCase2 },
+            { src: computerCase3 },
+            { src: computerCase4 },
+            { src: computerCase5 },
+        ],
     },
     {
         slug: 'crystal-structure-study',
@@ -306,6 +329,12 @@ export const projects: Project[] = [
         timeframe: 'Spring 2024',
         tools: ['SolidWorks'],
         sections: [],
+        images: [
+            { src: crystalStructure1, caption: 'Face-Centered Cubic Structure' },
+            { src: crystalStructure2, caption: 'Body-Centered Cubic Structure' },
+            { src: crystalStructure3, caption: 'Body-Centered with a Tetrahedral Side' },
+            { src: crystalStructure4, caption: 'Face-Centered with a Tetrahedral Side' },
+        ],
     },
     {
         slug: 'photography',
