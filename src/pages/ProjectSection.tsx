@@ -1,5 +1,5 @@
 import { Link, useOutletContext, useParams } from 'react-router-dom'
-import { ArrowLeft, ArrowRight } from 'lucide-react'
+import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import ImagePlaceholder from '../components/ImagePlaceholder'
 import ImageGallery from '../components/ImageGallery'
 import type { Project } from '../data/projects'
@@ -24,6 +24,18 @@ function ProjectSection() {
                 {section.title}
             </h1>
             <p className="mt-2 text-neutral-600">{section.summary}</p>
+
+            {section.demoUrl && (
+                <a
+                    href={section.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 rounded-lg bg-accent-500 px-5 py-3 font-medium text-white transition-colors hover:bg-accent-600"
+                >
+                    {section.demoLabel ?? 'View Demo'}
+                    <ExternalLink size={18} />
+                </a>
+            )}
 
             {section.images && section.images.length > 0 ? (
                 <ImageGallery

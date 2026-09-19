@@ -11,6 +11,10 @@ export interface ProjectSection {
     images?: SectionImage[]
     /** Gallery display mode; defaults to 'grid' when omitted. */
     galleryVariant?: 'grid' | 'carousel'
+    /** Link to a live/interactive demo (e.g. a prototype); shown as a CTA button. */
+    demoUrl?: string
+    /** Label for the demo CTA button; defaults to 'View Demo' when omitted. */
+    demoLabel?: string
 }
 
 import originalPusherFaceDesign from '../assets/pie-pusher/original-pusher-face-design.png'
@@ -44,6 +48,14 @@ import typefaceComparisonDesign from '../assets/type-speciman/6-postcard-typefac
 import typefaceSpecimenDesign from '../assets/type-speciman/7-postcard-typeface-specimen-design.jpg'
 import postcardsFlatLayPhoto from '../assets/type-speciman/8-postcards-flat-lay-photo.jpg'
 import handsomeCaseStudyDesign from '../assets/type-speciman/9-postcard-handsome-case-study-design.jpg'
+
+import nonObjectivePiece1 from '../assets/non-objective-design/1.jpg'
+import nonObjectivePiece2 from '../assets/non-objective-design/2.jpg'
+import nonObjectivePiece3 from '../assets/non-objective-design/3.jpg'
+import nonObjectivePiece4 from '../assets/non-objective-design/4.jpg'
+
+import transportDemo1 from '../assets/transport-demo/1.png'
+import transportDemo2 from '../assets/transport-demo/2.jpg'
 
 export interface Project {
     slug: string
@@ -247,6 +259,12 @@ export const projects: Project[] = [
                 summary: 'Value studies exploring non-objective design.',
                 content:
                     'These pieces were part of a series studying different values and non-objective design from my Color and Composition class in Spring 2024. I sketched my own geometric design and recreated it using a custom black-white-gray value scale I sketched and printed, incorporating tones of black and white paint, solid color shades, and pointillism.',
+                images: [
+                    { src: nonObjectivePiece1, caption: 'Custom Value Scale' },
+                    { src: nonObjectivePiece2, caption: 'Grayscale' },
+                    { src: nonObjectivePiece3, caption: 'Solid Color' },
+                    { src: nonObjectivePiece4, caption: 'Pointilism' },
+                ],
             },
             {
                 slug: 'transport-demo',
@@ -255,6 +273,13 @@ export const projects: Project[] = [
                     'An app concept addressing unreliable Boston public bus timing.',
                 content:
                     'For my Design Processes and Practices class in Fall 2023, we were given the prompt to develop a demo for an app to address an issue of our choice. I chose to address the issue of unreliable timing of the public buses in Boston. The demo route is a real-life path I would take to volunteering weekly.\n\nMy app, TransporT, includes live bus tracking and real-time updates, along with a social component where users can share comments and updates about the status of a bus or station. This demo was created using Adobe XD and includes basic functionality such as limited search options and bus routes.',
+                demoUrl:
+                    'https://xd.adobe.com/view/192fd724-dcf1-499f-af6f-edb0a20a53b0-4c7c/screen/4c9d0cd4-01bc-4d0f-bd8c-83e6ccd16c47?fullscreen&hints=off',
+                demoLabel: 'Launch Demo',
+                images: [
+                    { src: transportDemo1, caption: 'Process Photo 1' },
+                    { src: transportDemo2, caption: 'Process Photo 2' },
+                ],
             },
         ],
     },

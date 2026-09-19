@@ -2,7 +2,6 @@ import { useRef, useState, type TouchEvent } from 'react'
 import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 import type { SectionImage } from '../data/projects'
 
-
 function ImageGallery({
     images,
     className = '',
