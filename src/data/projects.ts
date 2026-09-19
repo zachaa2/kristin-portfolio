@@ -68,6 +68,17 @@ import crystalStructure2 from '../assets/crystal-structure-study/2.jpg'
 import crystalStructure3 from '../assets/crystal-structure-study/3.jpg'
 import crystalStructure4 from '../assets/crystal-structure-study/4.jpg'
 
+import titusSparrowPark1 from '../assets/titus-sparrow-park/01.jpg'
+import titusSparrowPark2 from '../assets/titus-sparrow-park/02.jpg'
+import titusSparrowPark3 from '../assets/titus-sparrow-park/03.jpg'
+import titusSparrowPark4 from '../assets/titus-sparrow-park/04.jpg'
+import titusSparrowPark5 from '../assets/titus-sparrow-park/05.jpg'
+import titusSparrowPark6 from '../assets/titus-sparrow-park/06.jpg'
+import titusSparrowPark7 from '../assets/titus-sparrow-park/07.jpg'
+import titusSparrowPark8 from '../assets/titus-sparrow-park/08.jpg'
+import titusSparrowPark9 from '../assets/titus-sparrow-park/09.jpg'
+import titusSparrowPark10 from '../assets/titus-sparrow-park/10.jpg'
+
 export interface Project {
     slug: string
     title: string
@@ -330,10 +341,22 @@ export const projects: Project[] = [
         tools: ['SolidWorks'],
         sections: [],
         images: [
-            { src: crystalStructure1, caption: 'Face-Centered Cubic Structure' },
-            { src: crystalStructure2, caption: 'Body-Centered Cubic Structure' },
-            { src: crystalStructure3, caption: 'Body-Centered with a Tetrahedral Side' },
-            { src: crystalStructure4, caption: 'Face-Centered with a Tetrahedral Side' },
+            {
+                src: crystalStructure1,
+                caption: 'Face-Centered Cubic Structure',
+            },
+            {
+                src: crystalStructure2,
+                caption: 'Body-Centered Cubic Structure',
+            },
+            {
+                src: crystalStructure3,
+                caption: 'Body-Centered with a Tetrahedral Side',
+            },
+            {
+                src: crystalStructure4,
+                caption: 'Face-Centered with a Tetrahedral Side',
+            },
         ],
     },
     {
@@ -344,7 +367,29 @@ export const projects: Project[] = [
         role: 'Personal Project',
         timeframe: 'Ongoing',
         tools: ['Photography'],
-        sections: [],
+        sections: [
+            {
+                slug: 'titus-sparrow-park',
+                title: 'Titus Sparrow Park',
+                summary:
+                    'A photo series taken around Titus Sparrow Park in Boston.',
+                content:
+                    'A collection of photos I took while spending time at Titus Sparrow Park in Boston\u2019s South End.',
+                galleryVariant: 'carousel',
+                images: [
+                    { src: titusSparrowPark1 },
+                    { src: titusSparrowPark2 },
+                    { src: titusSparrowPark3 },
+                    { src: titusSparrowPark4 },
+                    { src: titusSparrowPark5 },
+                    { src: titusSparrowPark6 },
+                    { src: titusSparrowPark7 },
+                    { src: titusSparrowPark8 },
+                    { src: titusSparrowPark9 },
+                    { src: titusSparrowPark10 },
+                ],
+            },
+        ],
     },
 ]
 
