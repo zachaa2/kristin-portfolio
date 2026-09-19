@@ -28,6 +28,11 @@ import infillPattern from '../assets/printing/3.jpg'
 import supportStructures1 from '../assets/printing/4.jpg'
 import supportStructures2 from '../assets/printing/5.jpg'
 
+import prototype from '../assets/hands-on/1.jpg'
+import hands from '../assets/hands-on/2.jpg'
+import sensorSpacing from '../assets/hands-on/3.jpg'
+import sensorTopView from '../assets/hands-on/4.jpg'
+
 export interface Project {
     slug: string
     title: string
@@ -114,6 +119,24 @@ export const projects: Project[] = [
                     'Prototype assembly and sensor fixturing work on the shop floor.',
                 content:
                     'Beyond CAD and modeling, a lot of my work at Econocorp was hands-on. One of the engineers was working on a new prototype to revise a portion of an existing machine — she had already designed it and just needed it assembled for testing. I disassembled the previous prototype and assisted her in assembling the new one.\n\nAs part of the Argo Carton Sealer rail redesign, after designing the new rails I also had to adjust the sensors that detected the box flaps to tell the glue guns when to fire. I experimented with the extension of the sensor plate and the sensors themselves — the spacing had to be able to detect the box without getting in the way of the flaps.',
+                images: [
+                    {
+                        src: prototype,
+                        caption: 'Disassembled Prototype',
+                    },
+                    {
+                        src: hands,
+                        caption: 'Dirty Hands :P',
+                    },
+                    {
+                        src: sensorSpacing,
+                        caption: 'Sensor Spacing',
+                    },
+                    {
+                        src: sensorTopView,
+                        caption: 'Sensor top view',
+                    },
+                ],
             },
             {
                 slug: '3d-printer-guide',
