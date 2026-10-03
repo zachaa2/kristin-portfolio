@@ -14,8 +14,8 @@ function Home() {
                         Hi, I&apos;m Kristin Zachariah.
                     </h1>
                     <p className="mt-4 text-lg text-neutral-600">
-                        I&apos;m a fourth-year Mechanical Engineering and Design
-                        major at Northeastern University, passionate about
+                        I studied Mechanical Engineering and Design at
+                        Northeastern University, and am passionate about
                         creative ideation as well as 2D/3D modeling and
                         component manufacturing. Take a look at my projects and
                         background below.

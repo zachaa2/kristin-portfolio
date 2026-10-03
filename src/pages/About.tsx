@@ -12,14 +12,14 @@ function About() {
                 />
                 <div className="space-y-4 text-neutral-700">
                     <p>
-                        Hello! My name is Kristin Zachariah, and I am a fourth
-                        year Mechanical Engineering and Design major at
-                        Northeastern University. I have always loved working
-                        with my hands and creating things. I believe my combined
-                        major has given me the opportunity to experience the
-                        best of both worlds, fueling my passion for creative
-                        thinking and ideation as well as 2D/3D modeling and
-                        component manufacturing.
+                        Hello! My name is Kristin Zachariah, and I studied
+                        Mechanical Engineering and Design at Northeastern
+                        University. I have always loved working with my hands
+                        and creating things. I believe my combined major has
+                        given me the opportunity to experience the best of both
+                        worlds, fueling my passion for creative thinking and
+                        ideation as well as 2D/3D modeling and component
+                        manufacturing.
                     </p>
                     <p>
                         My enthusiasm for exploring the intersection of
