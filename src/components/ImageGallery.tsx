@@ -127,12 +127,12 @@ function Carousel({
                 <button
                     type="button"
                     onClick={() => onExpand(index)}
-                    className="block w-full"
+                    className="flex h-64 w-full items-center justify-center sm:h-96"
                 >
                     <img
                         src={image.src}
                         alt={image.caption ?? ''}
-                        className="h-64 w-full object-cover sm:h-96"
+                        className="h-full w-full object-contain"
                     />
                 </button>
 
