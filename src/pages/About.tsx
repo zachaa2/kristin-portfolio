@@ -1,11 +1,15 @@
-import ImagePlaceholder from '../components/ImagePlaceholder'
+import mainPhoto from '../assets/main_photo.jpg'
 
 function About() {
     return (
         <div className="mx-auto max-w-6xl px-6 py-16">
             <h1 className="text-3xl font-bold text-neutral-900">About</h1>
             <div className="mt-8 grid gap-10 md:grid-cols-2 md:items-start">
-                <ImagePlaceholder label="About Photo" className="h-80" />
+                <img
+                    src={mainPhoto}
+                    alt="Portrait of Kristin Zachariah"
+                    className="h-80 w-full rounded-xl object-cover"
+                />
                 <div className="space-y-4 text-neutral-700">
                     <p>
                         Hello! My name is Kristin Zachariah, and I am a fourth
