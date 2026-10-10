@@ -17,67 +17,71 @@ export interface ProjectSection {
     demoLabel?: string
 }
 
-import originalPusherFaceDesign from '../assets/pie-pusher/original-pusher-face-design.png'
-import firstIterationNewPusher from '../assets/pie-pusher/first-iteration-new-pusher.png'
-import firstPrototype from '../assets/pie-pusher/first-prototype.png'
-import finalPusherFaceDesigns from '../assets/pie-pusher/final-pusher-face-designs.png'
+import originalPusherFaceDesign from '../assets/econocorp/pie-pusher/original-pusher-face-design.png'
+import firstIterationNewPusher from '../assets/econocorp/pie-pusher/first-iteration-new-pusher.png'
+import firstPrototype from '../assets/econocorp/pie-pusher/first-prototype.png'
+import finalPusherFaceDesigns from '../assets/econocorp/pie-pusher/final-pusher-face-designs.png'
 
-import initialPrint from '../assets/argoseal/1.jpg'
-import spacingTest from '../assets/argoseal/2.jpg'
-import finalPrototype from '../assets/argoseal/3.jpg'
-import manufacturedPart from '../assets/argoseal/4.jpg'
-import installation from '../assets/argoseal/5.jpg'
+import initialPrint from '../assets/econocorp/argoseal/1.jpg'
+import spacingTest from '../assets/econocorp/argoseal/2.jpg'
+import finalPrototype from '../assets/econocorp/argoseal/3.jpg'
+import manufacturedPart from '../assets/econocorp/argoseal/4.jpg'
+import installation from '../assets/econocorp/argoseal/5.jpg'
 
-import firstPrint from '../assets/printing/1.jpg'
-import bear from '../assets/printing/2.jpg'
-import infillPattern from '../assets/printing/3.jpg'
-import supportStructures1 from '../assets/printing/4.jpg'
-import supportStructures2 from '../assets/printing/5.jpg'
+import firstPrint from '../assets/econocorp/printing/1.jpg'
+import bear from '../assets/econocorp/printing/2.jpg'
+import infillPattern from '../assets/econocorp/printing/3.jpg'
+import supportStructures1 from '../assets/econocorp/printing/4.jpg'
+import supportStructures2 from '../assets/econocorp/printing/5.jpg'
 
-import prototype from '../assets/hands-on/1.jpg'
-import hands from '../assets/hands-on/2.jpg'
-import sensorSpacing from '../assets/hands-on/3.jpg'
-import sensorTopView from '../assets/hands-on/4.jpg'
+import prototype from '../assets/econocorp/hands-on/1.jpg'
+import econocorpLogo from '../assets/econocorp/logo.jpg'
+import hands from '../assets/econocorp/hands-on/2.jpg'
+import sensorSpacing from '../assets/econocorp/hands-on/3.jpg'
+import sensorTopView from '../assets/econocorp/hands-on/4.jpg'
 
-import clamartFrontDesign from '../assets/type-speciman/1-postcard-clamart-front-design.jpg'
-import clamartPrintPhoto from '../assets/type-speciman/2-postcard-clamart-print-photo.jpg'
-import typeAnatomyDesign from '../assets/type-speciman/3-postcard-type-anatomy-design.jpg'
-import typeAnatomyPrintPhoto from '../assets/type-speciman/4-postcard-type-anatomy-print-photo.jpg'
-import leMondeJournalHistoryDesign from '../assets/type-speciman/5-postcard-le-monde-journal-history-design.jpg'
-import typefaceComparisonDesign from '../assets/type-speciman/6-postcard-typeface-comparison-design.jpg'
-import typefaceSpecimenDesign from '../assets/type-speciman/7-postcard-typeface-specimen-design.jpg'
-import postcardsFlatLayPhoto from '../assets/type-speciman/8-postcards-flat-lay-photo.jpg'
-import handsomeCaseStudyDesign from '../assets/type-speciman/9-postcard-handsome-case-study-design.jpg'
+import clamartFrontDesign from '../assets/design-coursework/type-speciman/1-postcard-clamart-front-design.jpg'
+import clamartPrintPhoto from '../assets/design-coursework/type-speciman/2-postcard-clamart-print-photo.jpg'
+import typeAnatomyDesign from '../assets/design-coursework/type-speciman/3-postcard-type-anatomy-design.jpg'
+import typeAnatomyPrintPhoto from '../assets/design-coursework/type-speciman/4-postcard-type-anatomy-print-photo.jpg'
+import leMondeJournalHistoryDesign from '../assets/design-coursework/type-speciman/5-postcard-le-monde-journal-history-design.jpg'
+import typefaceComparisonDesign from '../assets/design-coursework/type-speciman/6-postcard-typeface-comparison-design.jpg'
+import typefaceSpecimenDesign from '../assets/design-coursework/type-speciman/7-postcard-typeface-specimen-design.jpg'
+import postcardsFlatLayPhoto from '../assets/design-coursework/type-speciman/8-postcards-flat-lay-photo.jpg'
+import handsomeCaseStudyDesign from '../assets/design-coursework/type-speciman/9-postcard-handsome-case-study-design.jpg'
 
-import nonObjectivePiece1 from '../assets/non-objective-design/1.jpg'
-import nonObjectivePiece2 from '../assets/non-objective-design/2.jpg'
-import nonObjectivePiece3 from '../assets/non-objective-design/3.jpg'
-import nonObjectivePiece4 from '../assets/non-objective-design/4.jpg'
+import nonObjectivePiece1 from '../assets/design-coursework/non-objective-design/1.jpg'
+import nonObjectivePiece2 from '../assets/design-coursework/non-objective-design/2.jpg'
+import nonObjectivePiece3 from '../assets/design-coursework/non-objective-design/3.jpg'
+import nonObjectivePiece4 from '../assets/design-coursework/non-objective-design/4.jpg'
 
-import transportDemo1 from '../assets/transport-demo/1.png'
-import transportDemo2 from '../assets/transport-demo/2.jpg'
+import transportDemo1 from '../assets/design-coursework/transport-demo/1.png'
+import transportDemo2 from '../assets/design-coursework/transport-demo/2.jpg'
+import designCourseworkLogo from '../assets/design-coursework/logo.jpg'
 
 import computerCase1 from '../assets/computer-case/1.jpg'
 import computerCase2 from '../assets/computer-case/2.jpg'
 import computerCase3 from '../assets/computer-case/3.jpg'
 import computerCase4 from '../assets/computer-case/4.jpg'
 import computerCase5 from '../assets/computer-case/5.jpg'
+import computerCaseLogo from '../assets/computer-case/computer-case.png'
 
 import crystalStructure1 from '../assets/crystal-structure-study/1.jpg'
 import crystalStructure2 from '../assets/crystal-structure-study/2.jpg'
 import crystalStructure3 from '../assets/crystal-structure-study/3.jpg'
 import crystalStructure4 from '../assets/crystal-structure-study/4.jpg'
 
-import titusSparrowPark1 from '../assets/titus-sparrow-park/01.jpg'
-import titusSparrowPark2 from '../assets/titus-sparrow-park/02.jpg'
-import titusSparrowPark3 from '../assets/titus-sparrow-park/03.jpg'
-import titusSparrowPark4 from '../assets/titus-sparrow-park/04.jpg'
-import titusSparrowPark5 from '../assets/titus-sparrow-park/05.jpg'
-import titusSparrowPark6 from '../assets/titus-sparrow-park/06.jpg'
-import titusSparrowPark7 from '../assets/titus-sparrow-park/07.jpg'
-import titusSparrowPark8 from '../assets/titus-sparrow-park/08.jpg'
-import titusSparrowPark9 from '../assets/titus-sparrow-park/09.jpg'
-import titusSparrowPark10 from '../assets/titus-sparrow-park/10.jpg'
+import titusSparrowPark1 from '../assets/photography/titus-sparrow-park/01.jpg'
+import titusSparrowPark2 from '../assets/photography/titus-sparrow-park/02.jpg'
+import titusSparrowPark3 from '../assets/photography/titus-sparrow-park/03.jpg'
+import titusSparrowPark4 from '../assets/photography/titus-sparrow-park/04.jpg'
+import titusSparrowPark5 from '../assets/photography/titus-sparrow-park/05.jpg'
+import titusSparrowPark6 from '../assets/photography/titus-sparrow-park/06.jpg'
+import titusSparrowPark7 from '../assets/photography/titus-sparrow-park/07.jpg'
+import titusSparrowPark8 from '../assets/photography/titus-sparrow-park/08.jpg'
+import titusSparrowPark9 from '../assets/photography/titus-sparrow-park/09.jpg'
+import titusSparrowPark10 from '../assets/photography/titus-sparrow-park/10.jpg'
+import photographyLogo from '../assets/photography/logo.jpg'
 
 export interface Project {
     slug: string
@@ -88,6 +92,12 @@ export interface Project {
     timeframe: string
     tools: string[]
     sections: ProjectSection[]
+    /** Thumbnail image shown on the /projects grid card. */
+    cardImage?: string
+    /** How `cardImage` should fit its frame: 'cover' (default, fills the frame, good for photos) or 'contain' (fits whole image, good for logos on a white background). */
+    cardImageFit?: 'cover' | 'contain'
+    /** Large, non-clickable banner image shown at the top of the project overview page. */
+    heroImage?: string
     /** Hero images shown on the project overview page (used when there are no sections to browse into). */
     images?: SectionImage[]
     /** Gallery display mode for `images`; defaults to 'grid' when omitted. */
@@ -105,6 +115,9 @@ export const projects: Project[] = [
         role: 'Mechanical Engineer Co-op',
         timeframe: 'Jan – Jun 2025',
         tools: ['SolidWorks', '3D Printing', 'Prototyping', 'GD&T'],
+        cardImage: econocorpLogo,
+        cardImageFit: 'contain',
+        heroImage: prototype,
         sections: [
             {
                 slug: 'pie-pusher-face',
@@ -171,10 +184,6 @@ export const projects: Project[] = [
                     'Beyond CAD and modeling, a lot of my work at Econocorp was hands-on. One of the engineers was working on a new prototype to revise a portion of an existing machine — she had already designed it and just needed it assembled for testing. I disassembled the previous prototype and assisted her in assembling the new one.\n\nAs part of the Argo Carton Sealer rail redesign, after designing the new rails I also had to adjust the sensors that detected the box flaps to tell the glue guns when to fire. I experimented with the extension of the sensor plate and the sensors themselves — the spacing had to be able to detect the box without getting in the way of the flaps.',
                 images: [
                     {
-                        src: prototype,
-                        caption: 'Disassembled Prototype',
-                    },
-                    {
                         src: hands,
                         caption: 'Dirty Hands :P',
                     },
@@ -230,6 +239,7 @@ export const projects: Project[] = [
         role: 'Design Student',
         timeframe: 'Fall 2023 – Fall 2024',
         tools: ['InDesign', 'Adobe XD', 'Painting'],
+        cardImage: designCourseworkLogo,
         sections: [
             {
                 slug: 'type-specimen',
@@ -319,6 +329,7 @@ export const projects: Project[] = [
         role: 'Team Project — Cornerstone of Engineering',
         timeframe: 'First Year',
         tools: ['Laser Cutting', '3D Printing', 'Arduino'],
+        cardImage: computerCaseLogo,
         sections: [],
         galleryVariant: 'carousel',
         images: [
@@ -367,6 +378,7 @@ export const projects: Project[] = [
         role: 'Personal Project',
         timeframe: 'Ongoing',
         tools: ['Photography'],
+        cardImage: photographyLogo,
         sections: [
             {
                 slug: 'titus-sparrow-park',

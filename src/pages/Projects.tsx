@@ -17,10 +17,22 @@ function Projects() {
                         to={`/projects/${project.slug}`}
                         className="group overflow-hidden rounded-xl border border-accent-100 bg-white shadow-sm transition-shadow hover:shadow-md"
                     >
-                        <ImagePlaceholder
-                            label="Project Image"
-                            className="h-40 w-full rounded-none"
-                        />
+                        {project.cardImage ? (
+                            <img
+                                src={project.cardImage}
+                                alt={project.title}
+                                className={
+                                    project.cardImageFit === 'contain'
+                                        ? 'h-40 w-full bg-white object-contain p-6'
+                                        : 'h-40 w-full object-cover'
+                                }
+                            />
+                        ) : (
+                            <ImagePlaceholder
+                                label="Project Image"
+                                className="h-40 w-full rounded-none"
+                            />
+                        )}
                         <div className="p-5">
                             <h2 className="text-lg font-semibold text-neutral-900 group-hover:text-accent-600">
                                 {project.title}
