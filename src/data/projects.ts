@@ -58,6 +58,11 @@ import nonObjectivePiece4 from '../assets/design-coursework/non-objective-design
 import transportDemo1 from '../assets/design-coursework/transport-demo/1.png'
 import transportDemo2 from '../assets/design-coursework/transport-demo/2.jpg'
 import designCourseworkLogo from '../assets/design-coursework/logo.jpg'
+import motivLogo from '../assets/motiv-design/logo.png'
+import motiv1 from '../assets/motiv-design/1.jpg'
+import motiv2 from '../assets/motiv-design/2.jpg'
+import motiv3 from '../assets/motiv-design/3.jpg'
+import motiv4 from '../assets/motiv-design/4.jpg'
 
 import computerCase1 from '../assets/computer-case/1.jpg'
 import computerCase2 from '../assets/computer-case/2.jpg'
@@ -228,6 +233,32 @@ export const projects: Project[] = [
                 ],
             },
         ],
+    },
+    {
+        slug: 'motiv-design',
+        title: 'Motiv Design',
+        tagline:
+            'Mechanical Design Co-op — product development, rapid prototyping, and testing.',
+        summary:
+            'For my second co-op, I got the opportunity to work at Motiv Design on the engineering team. This was the perfect role to explore the intersection of the components of my combined major, mechanical engineering and design. As Motiv often works long term with a variety of clients I cannot specifically discuss any projects. Overall, I gained experience with product development, rapid prototyping and testing, data collection and analysis, and 3D printing.\n\nFor projects in the product development stage I conducted market research and participated in brainstorming sessions to produce sketches and CAD. I organized the results of these efforts into presentations for discussion with clients.\n\nRapid prototyping was a combination of 3D printing, parts sourcing, and using existing materials in the office to create systems as proof of concept. I gained some skills soldering, using drills, taps, band saws and other miscellaneous shop tools and materials.\n\nAfter these systems were created, I collaborated with other engineers to create sensor systems to collect relevant data for future analysis. I conducted much of the testing for projects I was involved in to get data representative of an adequate amount of use cases.\n\nI gained some additional experience with 3D printing through managing the workflow of the 3 in-house printers between the engineering and industrial design team. This gave me the opportunity to learn about projects and make contributions beyond my main assignments, as I would often make necessary CAD adjustments before printing to assure correct and functioning prints.',
+        role: 'Mechanical Design Co-op',
+        timeframe: 'Jan – Jun 2026',
+        tools: [
+            'CAD',
+            'Rapid Prototyping',
+            '3D Printing',
+            'Data Collection & Analysis',
+        ],
+        cardImage: motivLogo,
+        cardImageFit: 'contain',
+        galleryVariant: 'carousel',
+        images: [
+            { src: motiv1 },
+            { src: motiv2 },
+            { src: motiv3 },
+            { src: motiv4 },
+        ],
+        sections: [],
     },
     {
         slug: 'design-coursework',
